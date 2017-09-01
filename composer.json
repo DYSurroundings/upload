@@ -1,0 +1,13 @@
+{
+    "name": "webform/09-upload",
+    "type": "template",
+    "require": {
+        "twig/twig": "2.*"
+    },
+    "authors": [
+        {
+            "name": "michaeljpitz",
+            "email": "michaeljpitz@gmail.com"
+        }
+    ]
+}
