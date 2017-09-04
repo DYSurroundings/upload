@@ -10,8 +10,10 @@ require_once 'vendor/autoload.php';
 
 // création du loader twig
 $loader = new Twig_Loader_Filesystem('v');
-$twig = new Twig_Environment($loader, array(
+$twig = new Twig_Environment($loader/*, array(
     'cache' => 'cache',
-));
+)*/);
 
-echo $twig->render('base.html.twig');
+// appel du contrôleur
+require_once 'c/uploadController.php';
+
