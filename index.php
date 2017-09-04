@@ -14,4 +14,5 @@ $twig = new Twig_Environment($loader, array(
     'cache' => 'cache',
 ));
 
+// rendu de la vue
 echo $twig->render('base.html.twig');
