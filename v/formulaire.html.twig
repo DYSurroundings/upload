@@ -1,0 +1,19 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Insérez un fichier{% endblock %}
+
+{% block head %}
+    <h2>Formulaire d'upload de fichier</h2>
+{% endblock %}
+{% block content %}
+    <hr/>
+    <h3>Formats acceptés :</h3>
+    <h4>doc, odt, pdf, txt, jpg, gif, png</h4>
+    <form action='' method='POST' enctype="multipart/form-data" name='fichiers'>
+        <input type='file' name='monfichier' required /><br/>
+        <input type='submit' value='envoyer' />    
+    </form>
+{% endblock %}
+{% block footer %}
+    <hr/><p>Pied de page</p>
+{% endblock %}
