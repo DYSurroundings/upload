@@ -72,5 +72,9 @@ class UploadFichier {
         $hasard = mt_rand(10000, 99999);
         return $sortie."_".$hasard.self::$extFichier;
     }
+    public static function AfficheDossier() {
+        // doit renvoyer tout ce qu'il y a dans le dossier
+        return "lala.jpg, lulu.gif";
+    }
 
 }

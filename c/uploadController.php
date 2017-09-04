@@ -17,6 +17,7 @@ echo $twig->render('formulaire.html.twig');
 }else{
     $u = UploadFichier::Upload($_FILES['monfichier']);
     if($u===true){
-        echo "Fichier envoyé!";
+        // rendu de la vue
+        echo $twig->render('envoie.html.twig',array("affiche"=> UploadFichier::AfficheDossier()));
     }
 }
