@@ -10,8 +10,12 @@
     <h3>Contenu du dossier</h3>
     <h4>v/upload</h4>
     <hr/>
-    <p>{{affiche}}</p>
-        
+    <p>
+    {% for val in affiche %}
+        {{val}}<br/>
+    {% endfor%}
+    </p>
+    <h3><a href="./">Retour</a> au formulaire</h3>
 {% endblock %}
 {% block footer %}
     <hr/><p>Pied de page</p>

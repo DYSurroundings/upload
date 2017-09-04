@@ -74,7 +74,7 @@ class UploadFichier {
     }
     public static function AfficheDossier() {
         // doit renvoyer tout ce qu'il y a dans le dossier
-        return "lala.jpg, lulu.gif";
+        return ["lala.jpg", "lulu.gif"];
     }
 
 }
