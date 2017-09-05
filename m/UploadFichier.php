@@ -74,7 +74,10 @@ class UploadFichier {
     }
     public static function AfficheDossier() {
         // doit renvoyer tout ce qu'il y a dans le dossier
-        return ["lala.jpg", "lulu.gif"];
+        $fichiers = scandir(self::$chemin);
+        // on ne prend que les valeurs non communes des 2 tableaux (pour supprimer . et ..)
+        $fichier = array_diff($fichiers, [".",".."]);
+        return $fichier;
     }
 
 }

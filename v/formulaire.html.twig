@@ -15,6 +15,14 @@
         <input type='file' name='monfichier' required /><br/>
         <input type='submit' value='envoyer' />    
     </form>
+    <hr/>
+    <h4>v/upload</h4>
+    <hr/>
+    <p>
+    {% for val in affiche %}
+        {{val}}<br/>
+    {% endfor%}
+    </p>
 {% endblock %}
 {% block footer %}
     <hr/><p>Pied de page</p>
